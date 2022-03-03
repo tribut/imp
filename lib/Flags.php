@@ -80,6 +80,7 @@ class IMP_Flags implements ArrayAccess, Serializable
                 'IMP_Flag_Imap_Junk',
                 'IMP_Flag_Imap_NotJunk',
                 'IMP_Flag_Imap_Seen',
+                'IMP_Flag_User',
             )));
             if (is_array($f_list)) {
                 foreach ($f_list as $val) {
