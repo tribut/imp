@@ -61,6 +61,7 @@ implements Horde_Shutdown_Task
                     'IMP_Mailbox_List_Virtual',
                     'IMP_Mailbox_List_Pop3',
                     'IMP_Mailbox_List',
+                    'IMP_Mailbox',
                 )));
             }
 
