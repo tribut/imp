@@ -80,6 +80,17 @@ class IMP_Flags implements ArrayAccess, Serializable
                 'IMP_Flag_Imap_Junk',
                 'IMP_Flag_Imap_NotJunk',
                 'IMP_Flag_Imap_Seen',
+                'IMP_Flag_System_Attachment',
+                'IMP_Flag_System_Encrypted',
+                'IMP_Flag_System_HighPriority',
+                'IMP_Flag_System_List',
+                'IMP_Flag_System_LowPriority',
+                'IMP_Flag_System_Personal',
+                'IMP_Flag_System_Signed',
+                'IMP_Flag_System_Unseen',
+                'IMP_Flag_System_Match_Address',
+                'IMP_Flag_System_Match_Flag',
+                'IMP_Flag_System_Match_Header',
                 'IMP_Flag_User',
             )));
             if (is_array($f_list)) {
