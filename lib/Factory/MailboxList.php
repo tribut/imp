@@ -57,7 +57,12 @@ implements Horde_Shutdown_Task
             $mailbox = IMP_Mailbox::get($mailbox);
 
             if ($ob = $this->_getCache($mailbox)->get($key)) {
-                $ob = @unserialize($ob);
+                $ob = @unserialize($ob, array('allowed_classes' => array(
+                    'IMP_Mailbox_List_Virtual',
+                    'IMP_Mailbox_List_Pop3',
+                    'IMP_Mailbox_List',
+                    'IMP_Mailbox',
+                )));
             }
 
             if (!$ob) {
